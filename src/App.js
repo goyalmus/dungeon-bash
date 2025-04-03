@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import TerminalShell from './TerminalShell';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ padding: '20px', fontFamily: 'monospace' }}>
+      <h1>Unix Shell Simulator Game</h1>
+      <p>This simulated shell teaches basic Unix commands.</p>
+      <TerminalShell />
     </div>
   );
 }
